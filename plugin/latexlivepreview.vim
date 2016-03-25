@@ -126,10 +126,10 @@ EEOOFF
                     \ b:livepreview_buf_data['tmp_dir'] . ' ' .
                     \ b:livepreview_buf_data['tmp_src_file'])
         " Second pdflatex compilation:
-        silent call system(
-                    \ 'pdflatex -shell-escape -interaction=nonstopmode -output-directory=' .
-                    \ b:livepreview_buf_data['tmp_dir'] . ' ' .
-                    \ b:livepreview_buf_data['tmp_src_file'])
+        "silent call system(
+        "            \ 'pdflatex -shell-escape -interaction=nonstopmode -output-directory=' .
+        "            \ b:livepreview_buf_data['tmp_dir'] . ' ' .
+        "            \ b:livepreview_buf_data['tmp_src_file'])
     endif
     echo l:bib_files
     if v:shell_error != 0
